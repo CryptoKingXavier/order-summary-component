@@ -1,0 +1,193 @@
+@import url('https://fonts.google.com/specimen/Hanken+Grotesk');
+
+@font-face {
+    font-family: Hanken Grotesk;
+    src: url('https://fonts.google.com/specimen/Hanken+Grotesk');
+}
+
+@font-face {
+    font-family: Hanken Grotesk;
+    src: url('../assets/fonts/static/HankenGrotesk-Bold.ttf');
+    font-weight: bold;
+}
+
+* {
+    font-family: Hanken Grotesk;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    outline-style: none;
+    -ms-overflow-style: none;
+}
+
+body {
+    background-color: hsla(225, 100%, 94%, 65%);
+    background: url('./images/pattern-background-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.container {
+    margin: auto;
+    text-align: center;
+    width: 60vw;
+    box-sizing: border-box;
+    color: hsl(0, 0%, 100%);
+    border: 1px solid gold;
+    margin-top: 5rem;
+    height: fit-content;
+    box-shadow: 3px 4px 10px 3px hsla(0, 59%, 41%, 20%);
+    border-radius: 20px;
+    padding-top: 0;
+    display: grid;
+    background-color: white;
+}
+
+.illustration {
+    margin: 0;
+    padding: 0;
+}
+
+.illustration > img {
+    width: 59.8vw;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.summary {
+    text-align: center;
+    margin: auto;
+}
+
+.summary h3 {
+    font-size: 25px;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 0;
+}
+
+.summary p {
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+    color: hsla(224, 23%, 55%, 90%);
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.annual-plan {
+    color: teal;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: hsla(225, 100%, 98%, 90%);
+    padding: 20px;
+    max-height: 90px;
+    border-radius: 15px;
+}
+
+.annual-plan img {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.annual-plan .plan {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.annual-plan .plan .top {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.annual-plan .plan .top span {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+}
+
+.annual-plan .change {
+    margin: 0;
+    padding: 0;
+    color: hsl(224, 41%, 60%);
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.checkout {
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    display: grid;
+    width: 75%;
+    margin-bottom: 2rem;
+}
+
+.checkout .payment {
+    background-color: hsl(224, 41%, 60%);
+    color: snow;
+    margin-bottom: 20px;
+    padding: 13px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.75px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px 0px lightgray;
+}
+
+.checkout .cancel-order {
+    background-color: white;
+    color: hsl(223, 47%, 23%);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+footer { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: auto;
+    margin-top: 1rem;
+    clear: both;
+    font-style: italic;
+    font-size: 20px;
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+
+    body {
+        background: url('./images/pattern-background-mobile.svg');
+    }
+
+    footer {
+        padding: 5px;
+        font-style: italic;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 1rem;
+    }
+}
